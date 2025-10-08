@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    color: black
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    font-size: 18px;
+}
