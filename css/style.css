@@ -1,3 +1,6 @@
+*{
+    font-family:"fonte_padrao";
+}
 a {
     text-decoration: none;
     color: black
@@ -9,4 +12,41 @@ ul {
     gap: 50px;
     justify-content: space-around;
     font-size: 18px;
+   
+}
+#div_banner{
+    height: 400px;
+} 
+#img_banner{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@font-face{
+    font-family:"fonte_padrao" ;
+    src: url("../fonts/Cocogoose-Pro-Regular-trial.ttf");
+}
+#lista_menu li a:hover{
+    color:rgb(239, 122, 5) ;
+    font-weight: bold;
+}
+#titulo_lugares{
+    text-align: center;
+}
+#div_lugares{
+    display: flex;
+     gap: 50px;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+#section_lugares{
+    margin-top: 70px;
+}
+#div_lugares img{
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+#div_lugares img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
