@@ -50,3 +50,12 @@ ul {
     transform: scale(1.1);
     cursor: pointer;
 }
+.cor-laranja{
+    color: orangered;
+}
+.centralizar{
+    text-align: center;
+}
+.justificar{
+    text-align: justify;
+}
