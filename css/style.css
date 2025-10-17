@@ -59,3 +59,24 @@ ul {
 .justificar{
     text-align: justify;
 }
+.espacamento-section{
+    margin-top: 10vh;
+}
+#container{
+    width: 80vw;
+    margin: 0 auto;
+}
+.lugar-detalhado{
+   display: flex;  
+}
+.img-detalhado{
+    width: 50%;
+}
+.texto-detalhado{
+    width: 50%;
+}
+.img-detalhado img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
