@@ -83,12 +83,21 @@ ul {
  }
 
 .img-detalhado img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;  
-    padding: 20px;
-    border-radius: 30px;
+
 }
  .texto-detalhado p{
     line-height: 1.8em;
+}
+.arredondar{
+     border-radius: 30px;
+}
+
+.margem-esquerda{
+    margin-left: 2vw;
+}
+.margem-direita{
+    margin-right: 2vw;
 }
