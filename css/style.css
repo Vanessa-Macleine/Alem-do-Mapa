@@ -68,18 +68,27 @@ ul {
 }
 .lugar-detalhado{
    display: flex;  
+   margin-top: 2vh;
 }
 .img-detalhado{
     width: 50%;
+    
 }
 .texto-detalhado{
     width: 50%;
-  text-align: justify;
-  line-height: 2;
-
 }
+ .justificar{ 
+  text-align: justify;
+
+ }
+
 .img-detalhado img{
     width: 90%;
     height: 90%;
     object-fit: cover;  
+    padding: 20px;
+    border-radius: 30px;
+}
+ .texto-detalhado p{
+    line-height: 1.8em;
 }
