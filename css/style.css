@@ -24,7 +24,7 @@ ul {
 }
 @font-face{
     font-family:"fonte_padrao" ;
-    src: url("../fonts/Cocogoose-Pro-Regular-trial.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 #lista_menu li a:hover{
     color:rgb(239, 122, 5) ;
@@ -69,9 +69,12 @@ ul {
 .lugar-detalhado{
    display: flex;  
    margin-top: 2vh;
+   
 }
 .img-detalhado{
     width: 50%;
+    max-height: 60vh;
+   
     
 }
 .texto-detalhado{
@@ -86,13 +89,15 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;  
+   
 
 }
  .texto-detalhado p{
     line-height: 1.8em;
 }
 .arredondar{
-     border-radius: 30px;
+     border-radius: 20px;
+     overflow: hidden;
 }
 
 .margem-esquerda{
