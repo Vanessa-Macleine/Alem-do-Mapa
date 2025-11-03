@@ -15,6 +15,11 @@
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.autoplay.css"
           /> 
+          <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+/>
+           
 
 </head>
 
@@ -211,31 +216,74 @@
 
             </section>
 
-        </div>
+        
         <section>
             <div class="largura-caixa">
             <div class="caixa-texto">
                 <i class="bi bi-bag cor-laranja"></i>
                 <h2 class="cor-laranja">Pacotes Exclusivos</h2>
-                <h4>Confira as Melhores Ofertas de Pacotes</h4>
+                <p>Confira as Melhores Ofertas de Pacotes</p>
             </div>
             <div class="caixa-texto">
                 <i class="bi bi-globe cor-laranja"></i>
                 <h2 class="cor-laranja">Dicas de Viagem</h2>
-                <h4>Fique por dentro das Melhores Dicas</h4>
+                <p>Fique por dentro das Melhores Dicas</p>
             </div>
             <div class="caixa-texto">
                 <i class="bi bi-emoji-sunglasses cor-laranja"></i>
                 <h2 class="cor-laranja">Seja um Franqueado</h2>
-                <h4>Empreenda no Turismo e viaje rumo ao Sucesso</h4>
+                <p>Empreenda no Turismo e viaje rumo ao Sucesso</p>
             </div>
             </div>
         </section>
-        <section>
-            <div>
-                    <h2 class="cor-laranja centralizar">Conheça o Lugar</h2>
-                </div>
+        <section id="video">
+            
+            <h2 class="cor-laranja">Conheça o Lugar</h2>
+        
+                <iframe src="https://www.youtube.com/embed/LAE1Q2VBzQM?si=2PrwVJ6ju-qWOwUx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </section>
+        <section id="mapa">
+            
+                <h2 class="cor-laranja">Como chegar</h2>
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15511488.109929979!2d-82.97987240761145!3d18.34799602903207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1762196765357!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="galeria">
+            <h1 class="cor-laranja">Galeria de fotos</h1>
+            <a
+  data-fancybox="gallery"
+  data-src="https://lipsum.app/id/1/1600x1200"
+  data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+>
+  <img
+    src="https://lipsum.app/id/1/200x150"
+    width="200"
+    height="150"
+    alt="Sample image #1"
+  />
+</a>
+
+<a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1600x1200">
+  <img
+    src="https://lipsum.app/id/2/200x150"
+    width="200"
+    height="150"
+    alt="Sample image #2"
+  />
+</a>
+
+<a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
+  <img
+    src="https://lipsum.app/id/3/200x150"
+    width="200"
+    height="150"
+    alt="Sample image #3"
+  />
+</a>
+        </section>
+        </div>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
@@ -251,7 +299,9 @@
         const containerBahamas = document.getElementById("myCarouselBahamas");
         const containerSaintMartin = document.getElementById("myCarouselSaintMartin");
         const options = {
-            // Your custom options
+            Autoplay:{
+                timeout: 5000
+            }
         };
 
         Carousel(container, options,{Arrows, Autoplay}).init();
@@ -261,6 +311,14 @@
          Carousel(containerSaintMartin, options,{Arrows, Autoplay}).init(); 
         
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
+    
+    
 </body>
 
 
