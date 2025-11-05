@@ -139,4 +139,9 @@ iframe{
     padding: 30px;
     background: #000;
 }
+#contato{
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}
 
