@@ -151,5 +151,19 @@ iframe{
     width: 50%; 
 }
 .formulario{
+    width: 100vh;
+}
+input{
     width: 100%;
+    margin-bottom: 10px;
+}
+#botao-limpar{
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+}
+#botao-enviar{
+    background: green;
+    color: #fff;
+    border-radius: 5px;
 }
