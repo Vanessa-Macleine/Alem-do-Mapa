@@ -111,6 +111,7 @@ ul {
        display: flex;  
        gap: 20px; 
        justify-content: center;
+       margin-top: 20px;
        
 }
 .caixa-texto{
@@ -140,8 +141,15 @@ iframe{
     background: #000;
 }
 #contato{
-    text-align: center;
-    color: red;
-    margin-top: 20px;
+    width: 100%;
+    display: flex;
 }
-
+#informacoes{
+    width: 50%;  
+}
+#mensagem{
+    width: 50%; 
+}
+.formulario{
+    width: 100%;
+}
